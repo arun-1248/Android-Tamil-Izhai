@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.inputmethodservice.KeyboardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:background="@color/keyboard_bg"
+    android:keyBackground="@drawable/letter_background"
+    android:keyTextColor="@color/black"
+    android:theme="@style/Base.Theme.TamilIazhi"
+    android:keyPreviewHeight="@null"
+    android:paddingBottom="15dp"
+    android:paddingTop="50dp"
+    android:paddingStart="3dp"
+    android:paddingEnd="3dp"
+    android:keyTextSize="14sp">
+
+</android.inputmethodservice.KeyboardView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="2%p"
+    android:verticalGap="1%p"
+    android:keyWidth="8%p"
+    android:keyHeight="5%p"
+    >
+
+    <Row>
+        <Key android:codes="80" android:keyLabel="1" android:keyOutputText="1" android:keyWidth="8%p"  android:keyEdgeFlags="left"/>
+        <Key android:codes="80" android:keyLabel="2" android:keyOutputText="2" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="3" android:keyOutputText="3" android:keyWidth="8%p"  />
+        <Key android:codes="80" android:keyLabel="4" android:keyOutputText="4" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="5" android:keyOutputText="5" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="6" android:keyOutputText="6" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="7" android:keyOutputText="7" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="8" android:keyOutputText="8" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="9" android:keyOutputText="9" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="0" android:keyOutputText="0" android:keyWidth="8%p"  android:keyEdgeFlags="right"  />
+    </Row>
+
+    <Row>
+        <!--        <Key android:keyIcon="@color/black" android:horizontalGap="2%p" android:codes="-7" />-->
+        <Key android:codes="81" android:keyLabel="-"  android:keyOutputText="ஓ" android:keyWidth="9%p" android:keyEdgeFlags="left"/>
+        <Key android:keyLabel="/" android:keyOutputText="ஏ" android:keyWidth="9%p"/>
+        <Key android:keyLabel=":" android:keyOutputText="ஊ" android:keyWidth="9%p"/>
+        <Key android:keyLabel=";" android:keyOutputText="ஈ" android:keyWidth="9%p"/>
+        <Key android:keyLabel="(" android:keyOutputText="ஆ" android:keyWidth="9%p"/>
+        <Key android:keyLabel=")" android:keyOutputText="ஜ்" android:keyWidth="9%p"/>
+        <Key android:keyLabel="$" android:keyOutputText="ஶ்" android:keyWidth="9%p"/>
+        <Key android:keyLabel="&amp;" android:keyOutputText="ஷ்" android:keyWidth="9%p"/>
+        <Key android:keyLabel="\" android:keyOutputText="ஸ்" android:keyWidth="9%p" />
+        <Key android:codes="81" android:keyLabel="\@" android:keyOutputText="ஸ்" android:keyWidth="9%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:keyLabel="#+=" android:keyOutputText="#+=" android:keyWidth="9%p" android:keyEdgeFlags="left" android:codes="-1"/>
+        <Key android:keyLabel="." android:keyOutputText="." android:keyWidth="9%p" />
+        <Key android:keyLabel="," android:keyOutputText="," android:keyWidth="9%p"/>
+        <Key android:keyLabel="\?" android:keyOutputText="\?" android:keyWidth="9%p"/>
+        <Key android:keyLabel="!" android:keyOutputText="!" android:keyWidth="9%p"/>
+        <Key android:keyLabel="'" android:keyOutputText="'" android:keyWidth="9%p"/>
+        <Key android:keyLabel="₹" android:keyOutputText="₹" android:keyWidth="9%p"/>
+        <Key android:keyIcon="@drawable/outline_backspace_24" android:keyWidth="9%p" android:isRepeatable="true" android:keyEdgeFlags="right" android:codes="-5"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-5"
+            android:keyLabel="123"
+            android:keyWidth="17%p"
+            android:keyEdgeFlags="left" />
+        <Key android:codes="-9"
+            android:keyIcon="@drawable/outline_emoji_emotions_24"
+            android:keyWidth="8%p" />
+        <Key android:codes="32"
+            android:keyLabel="இடைவெளி"
+            android:keyWidth="40%p" />
+        <Key android:codes="10"
+            android:keyIcon="@drawable/baseline_shortcut_24"
+            android:keyWidth="30%p"
+            android:keyEdgeFlags="right"/>
+    </Row>
+
+</Keyboard>
