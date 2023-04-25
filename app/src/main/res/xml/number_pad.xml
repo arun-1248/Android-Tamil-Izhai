@@ -21,32 +21,32 @@
 
     <Row>
         <!--        <Key android:keyIcon="@color/black" android:horizontalGap="2%p" android:codes="-7" />-->
-        <Key android:codes="81" android:keyLabel="-"  android:keyOutputText="ஓ" android:keyWidth="9%p" android:keyEdgeFlags="left"/>
-        <Key android:keyLabel="/" android:keyOutputText="ஏ" android:keyWidth="9%p"/>
-        <Key android:keyLabel=":" android:keyOutputText="ஊ" android:keyWidth="9%p"/>
-        <Key android:keyLabel=";" android:keyOutputText="ஈ" android:keyWidth="9%p"/>
-        <Key android:keyLabel="(" android:keyOutputText="ஆ" android:keyWidth="9%p"/>
-        <Key android:keyLabel=")" android:keyOutputText="ஜ்" android:keyWidth="9%p"/>
-        <Key android:keyLabel="$" android:keyOutputText="ஶ்" android:keyWidth="9%p"/>
-        <Key android:keyLabel="&amp;" android:keyOutputText="ஷ்" android:keyWidth="9%p"/>
-        <Key android:keyLabel="\" android:keyOutputText="ஸ்" android:keyWidth="9%p" />
-        <Key android:codes="81" android:keyLabel="\@" android:keyOutputText="ஸ்" android:keyWidth="9%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="81" android:keyLabel="-"  android:keyOutputText="-" android:keyWidth="9%p" android:keyEdgeFlags="left"/>
+        <Key android:keyLabel="/" android:keyOutputText="/" android:keyWidth="9%p"/>
+        <Key android:keyLabel=":" android:keyOutputText=":" android:keyWidth="9%p"/>
+        <Key android:keyLabel=";" android:keyOutputText=";" android:keyWidth="9%p"/>
+        <Key android:keyLabel="(" android:keyOutputText="(" android:keyWidth="9%p"/>
+        <Key android:keyLabel=")" android:keyOutputText=")" android:keyWidth="9%p"/>
+        <Key android:keyLabel="$" android:keyOutputText="$" android:keyWidth="9%p"/>
+        <Key android:keyLabel="&amp;" android:keyOutputText="&amp;" android:keyWidth="9%p"/>
+        <Key android:keyLabel="\\" android:keyOutputText="\\" android:keyWidth="9%p" />
+        <Key android:codes="81" android:keyLabel="\@" android:keyOutputText="\@" android:keyWidth="9%p" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row>
-        <Key android:keyLabel="#+=" android:keyOutputText="#+=" android:keyWidth="9%p" android:keyEdgeFlags="left" android:codes="-1"/>
-        <Key android:keyLabel="." android:keyOutputText="." android:keyWidth="9%p" />
-        <Key android:keyLabel="," android:keyOutputText="," android:keyWidth="9%p"/>
-        <Key android:keyLabel="\?" android:keyOutputText="\?" android:keyWidth="9%p"/>
-        <Key android:keyLabel="!" android:keyOutputText="!" android:keyWidth="9%p"/>
-        <Key android:keyLabel="'" android:keyOutputText="'" android:keyWidth="9%p"/>
-        <Key android:keyLabel="₹" android:keyOutputText="₹" android:keyWidth="9%p"/>
-        <Key android:keyIcon="@drawable/outline_backspace_24" android:keyWidth="9%p" android:isRepeatable="true" android:keyEdgeFlags="right" android:codes="-5"/>
+        <Key android:keyLabel="#+=" android:keyWidth="10%p" android:keyEdgeFlags="left" android:codes="@string/symbols_keypad"/>
+        <Key android:keyLabel="." android:keyOutputText="." android:keyWidth="10%p" />
+        <Key android:keyLabel="," android:keyOutputText="," android:keyWidth="10%p"/>
+        <Key android:keyLabel="\?" android:keyOutputText="\?" android:keyWidth="10%p"/>
+        <Key android:keyLabel="!" android:keyOutputText="!" android:keyWidth="10%p"/>
+        <Key android:keyLabel="'" android:keyOutputText="'" android:keyWidth="10%p"/>
+        <Key android:keyLabel="₹" android:keyOutputText="₹" android:keyWidth="10%p"/>
+        <Key android:keyIcon="@drawable/outline_backspace_24" android:keyWidth="10%p" android:isRepeatable="true" android:keyEdgeFlags="right" android:codes="-5"/>
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="-5"
-            android:keyLabel="123"
+        <Key android:codes="@string/letters_keypad"
+            android:keyLabel="தமிழ்"
             android:keyWidth="17%p"
             android:keyEdgeFlags="left" />
         <Key android:codes="-9"

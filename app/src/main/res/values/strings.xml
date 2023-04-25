@@ -2,4 +2,8 @@
     <string name="app_name">தமிழ் இழை</string>
     <string name="keyboardName">ஒலியன் விசை - தமிழ் இழை</string>
     <string name="new_line_keypad">10</string>
+    <string name="letters_keypad">-1111</string>
+    <string name="letters_swift">-1</string>
+    <string name="symbols_keypad">-11</string>
+    <string name="number_keypad">-11111</string>
 </resources>

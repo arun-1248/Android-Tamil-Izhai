@@ -33,7 +33,7 @@
     </Row>
 
     <Row>
-        <Key android:keyIcon="@drawable/outline_upload_24" android:keyWidth="9%p" android:keyEdgeFlags="left" android:codes="-1"/>
+        <Key android:keyIcon="@drawable/outline_upload_24" android:keyWidth="9%p" android:keyEdgeFlags="left" android:codes="@string/letters_swift"/>
         <Key android:keyLabel="ஔ" android:keyOutputText="ஔ" android:keyWidth="9%p" />
         <Key android:keyLabel="ஐ" android:keyOutputText="ஐ" android:keyWidth="9%p"/>
         <Key android:keyLabel="ங்" android:keyOutputText="ங்" android:keyWidth="9%p"/>
@@ -45,7 +45,7 @@
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="-5"
+        <Key android:codes="@string/number_keypad"
             android:keyLabel="123"
             android:keyWidth="17%p"
             android:keyEdgeFlags="left" />

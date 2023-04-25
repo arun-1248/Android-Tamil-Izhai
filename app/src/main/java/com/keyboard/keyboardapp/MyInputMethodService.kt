@@ -1,21 +1,18 @@
 package com.keyboard.keyboardapp
 
-import android.R.id.keyboardView
 import android.inputmethodservice.InputMethodService
 import android.inputmethodservice.Keyboard
 import android.inputmethodservice.KeyboardView
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import android.view.inputmethod.InputConnection
 
 
 class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardActionListener {
 
     private var keyboard:Keyboard? = null
     private var keyboardView:KeyboardView? = null
-    private var shiftToggle = false
-    private var numberToggle = false
+    private var shiftToggleLetters = false
 
     override fun onCreateInputView(): View? {
         keyboardView = layoutInflater.inflate(R.layout.keyboard_view, null) as KeyboardView
@@ -28,7 +25,7 @@ class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardAction
     public override fun onKey(primaryCode: Int, keyCodes: IntArray?) {
         val ic = currentInputConnection ?: return
         Log.e(";;-;", "onKey: $primaryCode")
-        switchKeyboardView(ic,primaryCode)
+        switchKeyboardView(primaryCode)
         when (primaryCode) {
             Keyboard.KEYCODE_DELETE -> {
                 val selectedText = ic.getSelectedText(0)
@@ -47,34 +44,39 @@ class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardAction
         }
     }
 
-    private fun switchKeyboardView(ic: InputConnection, primaryCode: Int) {
-
-        when (primaryCode) {
-            swiftKeyCode -> {
-                if (!shiftToggle) {
-                    shiftToggle = true
+    private fun switchKeyboardView(primaryCode: Int) {
+        val res = convertPixelsToDp(spToPx(14f,this).toFloat(),this)
+        Log.e(";;-;", "switchKeyboardView: $res", )
+        when (primaryCode.toString()) {
+            getString(R.string.letters_swift),getString(R.string.letters_keypad) -> {
+                if (primaryCode.toString() == getString(R.string.letters_keypad)) {
+                    shiftToggleLetters = false
+                    keyboard = Keyboard(this, R.xml.tamil_keypad)
+                    keyboardView?.keyboard = keyboard
+                    keyboardView?.setOnKeyboardActionListener(this)
+                    return
+                }
+                if (!shiftToggleLetters) {
+                    shiftToggleLetters = true
                     keyboard = Keyboard(this, R.xml.shift_tamil_keypad)
                     keyboardView?.keyboard = keyboard
                     keyboardView?.setOnKeyboardActionListener(this)
                 } else {
-                    shiftToggle = false
+                    shiftToggleLetters = false
                     keyboard = Keyboard(this, R.xml.tamil_keypad)
                     keyboardView?.keyboard = keyboard
                     keyboardView?.setOnKeyboardActionListener(this)
                 }
             }
-            numberKeyCode -> {
-                if (!numberToggle) {
-                    numberToggle = true
-                    keyboard = Keyboard(this, R.xml.number_pad)
-                    keyboardView?.keyboard = keyboard
-                    keyboardView?.setOnKeyboardActionListener(this)
-                } else {
-                    numberToggle = false
-                    keyboard = Keyboard(this, R.xml.tamil_keypad)
-                    keyboardView?.keyboard = keyboard
-                    keyboardView?.setOnKeyboardActionListener(this)
-                }
+            getString(R.string.number_keypad) -> {
+                keyboard = Keyboard(this, R.xml.number_pad)
+                keyboardView?.keyboard = keyboard
+                keyboardView?.setOnKeyboardActionListener(this)
+            }
+            getString(R.string.symbols_keypad) -> {
+                keyboard = Keyboard(this, R.xml.symbols_pad)
+                keyboardView?.keyboard = keyboard
+                keyboardView?.setOnKeyboardActionListener(this)
             }
         }
     }

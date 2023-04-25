@@ -2,6 +2,8 @@ package com.keyboard.keyboardapp
 
 import android.content.Context
 import android.graphics.Typeface
+import android.util.DisplayMetrics
+import android.util.TypedValue
 import java.lang.reflect.Field
 
 
@@ -21,4 +23,24 @@ fun replaceFont(staticTypefaceName: String, newTypeface: Typeface?) {
     } catch (e: IllegalAccessException) {
         e.printStackTrace()
     }
+}
+
+fun spToPx(sp: Float, context: Context): Int {
+    return TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_SP,
+        sp,
+        context.resources.displayMetrics
+    ).toInt()
+}
+
+fun dpToPx(dp: Float, context: Context): Int {
+    return TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_DIP,
+        dp,
+        context.resources.displayMetrics
+    ).toInt()
+}
+
+fun convertPixelsToDp(px: Float, context: Context): Float {
+    return px / (context.resources.displayMetrics.densityDpi.toFloat() / DisplayMetrics.DENSITY_DEFAULT)
 }

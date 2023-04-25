@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="2%p"
+    android:verticalGap="1%p"
+    android:keyWidth="8%p"
+    android:keyHeight="5%p"
+    >
+
+    <Row>
+        <Key android:codes="80" android:keyLabel="[" android:keyOutputText="[" android:keyWidth="8%p"  android:keyEdgeFlags="left"/>
+        <Key android:codes="80" android:keyLabel="]" android:keyOutputText="]" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="{" android:keyOutputText="{" android:keyWidth="8%p"  />
+        <Key android:codes="80" android:keyLabel="}" android:keyOutputText="}" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="#" android:keyOutputText="#" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="%" android:keyOutputText="%" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="^" android:keyOutputText="^" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="*" android:keyOutputText="*" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="+" android:keyOutputText="+" android:keyWidth="8%p" />
+        <Key android:codes="80" android:keyLabel="=" android:keyOutputText="=" android:keyWidth="8%p"  android:keyEdgeFlags="right"  />
+    </Row>
+
+    <Row>
+        <!--        <Key android:keyIcon="@color/black" android:horizontalGap="2%p" android:codes="-7" />-->
+        <Key android:codes="81" android:keyLabel="_"  android:keyOutputText="_" android:keyWidth="9%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="81" android:keyLabel="\\" android:keyOutputText="\\" android:keyWidth="9%p"/>
+        <Key android:codes="81" android:keyLabel="|" android:keyOutputText="|" android:keyWidth="9%p"/>
+        <Key android:codes="81" android:keyLabel="~" android:keyOutputText="~" android:keyWidth="9%p"/>
+<!--        <Key android:keyLabel="\<" android:keyOutputText="\<" android:keyWidth="9%p"/>-->
+<!--        <Key android:keyLabel="\>" android:keyOutputText="\>" android:keyWidth="9%p"/>-->
+        <Key android:codes="81" android:keyLabel="€" android:keyOutputText="€" android:keyWidth="9%p"/>
+        <Key android:codes="163" android:keyIcon="@drawable/pound" android:keyOutputText="£" android:keyWidth="9%p"/>
+        <Key android:codes="165" android:keyIcon="@drawable/yen" android:keyOutputText="¥" android:keyWidth="9%p" />
+        <Key android:codes="81" android:keyLabel="•" android:keyOutputText="•" android:keyWidth="9%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:keyLabel="123" android:keyWidth="10%p" android:keyEdgeFlags="left" android:codes="@string/number_keypad"/>
+        <Key android:keyLabel="௰" android:keyOutputText="௰" android:keyWidth="10%p" />
+        <Key android:keyLabel="௱" android:keyOutputText="௱" android:keyWidth="10%p"/>
+        <Key android:keyLabel="௲" android:keyOutputText="௲" android:keyWidth="10%p"/>
+        <Key android:keyLabel="௸" android:keyOutputText="௸" android:keyWidth="10%p"/>
+        <Key android:keyLabel="௺" android:keyOutputText="௺" android:keyWidth="10%p"/>
+        <Key android:keyLabel="௹" android:keyOutputText="௹" android:keyWidth="10%p"/>
+        <Key android:keyIcon="@drawable/outline_backspace_24" android:keyWidth="10%p" android:isRepeatable="true" android:keyEdgeFlags="right" android:codes="-5"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="@string/letters_keypad"
+            android:keyLabel="தமிழ்"
+            android:keyWidth="17%p"
+            android:keyEdgeFlags="left" />
+        <Key android:codes="-9"
+            android:keyIcon="@drawable/outline_emoji_emotions_24"
+            android:keyWidth="8%p" />
+        <Key android:codes="32"
+            android:keyLabel="இடைவெளி"
+            android:keyWidth="40%p" />
+        <Key android:codes="10"
+            android:keyIcon="@drawable/baseline_shortcut_24"
+            android:keyWidth="30%p"
+            android:keyEdgeFlags="right"/>
+    </Row>
+
+</Keyboard>
